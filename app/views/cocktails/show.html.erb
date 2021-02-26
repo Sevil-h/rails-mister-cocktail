@@ -1,0 +1,36 @@
+<div class="container">
+<h1><%= @cocktail.name %></h1>
+<p><%= link_to 'Home Page', cocktails_path(@cocktails) %></p>
+<div class="row">
+  <div class="col-8">
+    <h3>Recipe</h3>
+      <table>
+        <tbody>
+          <thead>
+            <th>Ingredient</th>
+            <th>Description</th>
+          </thead>
+            <% @cocktail.doses.each do |dose| %>
+              <tr>
+                <td><%=  dose.ingredient.name %></td>
+                <td><%=  dose.description %></td>
+                <td><%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %></td>
+              </tr>
+              <% end %>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+  <div class="row">
+    <div class="col-8">
+      <h3>Add a new dose</h3>
+        <%= simple_form_for [@cocktail, @dose] do |f|%>
+        <%= f.association :ingredient %>
+        <%= f.input :description %>
+        <%= f.button :submit %>
+        <% end %>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
