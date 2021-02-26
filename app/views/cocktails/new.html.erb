@@ -1,10 +1,13 @@
-<div class="container">
-  <div class="row">
+<div class="container m-5 text-center">
+  <div class="text row justify-content-center">
     <div class="col-8">
       <h1>Create a new Cocktail</h1>
       <%= render 'form', cocktail: @cocktail %>
-
-      <%= link_to 'Back', root_path %>
+      <h3>
+        <%= link_to root_path(@cocktails) do %>
+        <i class="home fas fa-cocktail"></i>
+        <% end %>
+      </h3>
     </div>
   </div>
 </div>

@@ -1,36 +1,42 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url();">
+  <h3><%= link_to root_path(@cocktails) do %>
+  <i class="home fas fa-cocktail"></i>
+  <% end %>
+  </h3>
+  <h1><%= @cocktail.name %></h1>
+</div>
 <div class="container">
-<h1><%= @cocktail.name %></h1>
-<p><%= link_to 'Home Page', root_path(@cocktails) %></p>
-<div class="row">
-  <div class="col-8">
-    <h3>Recipe</h3>
+  <div class="card-show">
+    <div class="info">
+      <div class="col-8 p-2 m-3">
+      <h3>Recipe</h3>
       <table>
         <tbody>
           <thead>
             <th>Ingredient</th>
-            <th>Description</th>
+            <th class="mr-4">Description</th>
+            <th></th>
           </thead>
-            <% @cocktail.doses.each do |dose| %>
-              <tr>
-                <td><%=  dose.ingredient.name %></td>
-                <td><%=  dose.description %></td>
-                <td><%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %></td>
-              </tr>
-              <% end %>
+          <% @cocktail.doses.each do |dose| %>
+            <tr>
+              <td><%=  dose.ingredient.name %></td>
+              <td><%=  dose.description %></td>
+              <td><%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
+                <i class="delete fa fa-trash destroy_dose"></i>
+              <% end %></td>
+            </tr>
+          <% end %>
         </tbody>
       </table>
+      </div>
     </div>
-    <div class="container">
-  <div class="row">
-    <div class="col-8">
-      <h3>Add a new dose</h3>
-        <%= simple_form_for [@cocktail, @dose] do |f|%>
-        <%= f.association :ingredient %>
-        <%= f.input :description %>
-        <%= f.button :submit %>
-        <% end %>
-    </div>
+  <div class="form p-2 m-3">
+    <h4>Add a new dose</h4>
+    <%= simple_form_for [@cocktail, @dose] do |f|%>
+    <%= f.association :ingredient %>
+    <%= f.input :description %>
+    <%= f.button :submit %>
+    <% end %>
   </div>
-</div>
   </div>
 </div>

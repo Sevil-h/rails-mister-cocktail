@@ -1,3 +1,35 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  background: #2B4250;
+}
+.text {
+}
+.home {
+  color: #B83A00;
+  margin: 10px;
+  opacity: 0.8;
+  &:hover {
+    color: #688D78;
+    transition-duration: 0.7s;
+  }
+}
+.delete {
+  color: #B83A00;
+    &:hover {
+    color: #688D78;
+    transition-duration: 0.7s;
+  }
+}
+th {
+  padding: 10px;
+}
+td {
+  padding: 10px;
+}
+.text {
+  color: #B4B0BF;
+}
+
