@@ -22,6 +22,12 @@ class CocktailsController < ApplicationController
     @review = Review.new
   end
 
+  def destroy
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.destroy
+    redirect_to cocktails_path(@cocktail)
+  end
+
   private
 
   def cocktail_params

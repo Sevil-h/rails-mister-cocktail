@@ -8,7 +8,7 @@ body {
 .text {
 }
 .home {
-  color: #B83A00;
+  color: #7A2F00;
   margin: 10px;
   opacity: 0.8;
   &:hover {
@@ -20,7 +20,7 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #B83A00;
+  color: #7A2F00;
   margin: 10px;
   opacity: 0.8;
   &:hover {
@@ -29,7 +29,7 @@ body {
   }
 }
 .delete {
-  color: #B83A00;
+  color: #7A2F00;
     &:hover {
     color: #688D78;
     transition-duration: 0.7s;
@@ -43,5 +43,10 @@ td {
 }
 .text {
   color: #B4B0BF;
+}
+.new-form {
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 10px;
 }
 

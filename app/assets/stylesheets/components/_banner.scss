@@ -5,15 +5,18 @@
   text-align: center;
   width: 100vw;
   margin-bottom: 10px;
+  height: 350px;
+  background-position-y: -20px;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://res.cloudinary.com/lilium/image/upload/c_fill,g_auto,h_500,q_100,w_970/b_rgb:000000,e_gradient_fade:0,q_100,y_-0.5/v1614528172/bannervintage.jpg');
 }
 
 .banner h1 {
-  margin: 0;
-  color: #B83A00;
+  color: #7A2F00;
   font-family: 'Helvetica';
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   font-size: 50px;
   font-weight: bold;
+  text-align: center;
 }
 
 .banner p {
@@ -24,7 +27,7 @@
 }
 
 .btn {
-  background: #B83A00;
+  background: #7A2F00;
   padding: 8px 16px;
   border-radius: 5px;
   font-weight: bold;
