@@ -1,8 +1,10 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url();">
-  <h3><%= link_to root_path(@cocktails) do %>
-  <i class="home fas fa-cocktail"></i>
-  <% end %>
-  </h3>
+  <div class="back-btn">
+    <h3><%= link_to root_path(@cocktails) do %>
+    <i class="home-s fas fa-undo-alt"></i>
+    <% end %>
+</h3>
+  </div>
   <h1><%= @cocktail.name %></h1>
 </div>
 <div class="container">
