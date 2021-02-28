@@ -38,7 +38,7 @@
         <% @cocktail.reviews.each do |review| %>
         <% counter = 0 %>
         <% 5.times do %>
-        <i class="fa <%= review.rating > counter ? 'fa-star' : 'fa-star-o' %>"></i>
+        <i class="star-icon fa <%= review.rating > counter ? 'fa-star' : 'fa-star-o' %>"></i>
           <% counter += 1 %>
           <% end %>
           <%= review.content %>
