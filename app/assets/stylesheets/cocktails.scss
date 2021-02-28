@@ -3,16 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 body {
-  background: #2B4250;
-}
-.text {
+  background: #D0DCD5;
 }
 .home {
-  color: #7A2F00;
+  color: #688D78;
   margin: 10px;
   opacity: 0.8;
   &:hover {
-    color: #688D78;
+    color: #455E4F;
     transition-duration: 0.7s;
   }
 }
@@ -20,18 +18,18 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #7A2F00;
+  color: #D0DCD5;
   margin: 10px;
-  opacity: 0.8;
+  opacity: 0.7;
   &:hover {
-    color: #688D78;
+    opacity: 1;
     transition-duration: 0.7s;
   }
 }
 .delete {
-  color: #7A2F00;
+  color: #688D78;
     &:hover {
-    color: #688D78;
+    color: #455E4F;
     transition-duration: 0.7s;
   }
 }
@@ -42,11 +40,14 @@ td {
   padding: 10px;
 }
 .text {
-  color: #B4B0BF;
+  color: $laci;
 }
 .new-form {
   box-sizing: border-box;
   border: 1px solid rgba(0,0,0,0.2);
   padding: 10px;
 }
-
+.cocktail-img {
+  border-radius: 10px;
+  opacity: 0.8;
+}

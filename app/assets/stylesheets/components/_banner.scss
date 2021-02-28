@@ -5,13 +5,13 @@
   text-align: center;
   width: 100vw;
   margin-bottom: 10px;
-  height: 350px;
-  background-position-y: -20px;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://res.cloudinary.com/lilium/image/upload/c_fill,g_auto,h_500,q_100,w_970/b_rgb:000000,e_gradient_fade:0,q_100,y_-0.5/v1614528172/bannervintage.jpg');
+  height: 20px;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://i.pinimg.com/564x/8a/30/24/8a30240bcafa4e9299edf3480cf055f7.jpg');
 }
 
 .banner h1 {
-  color: #7A2F00;
+  color: #EBEBEB;
   font-family: 'Helvetica';
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   font-size: 50px;
@@ -21,13 +21,13 @@
 
 .banner p {
   font-size: 20px;
-  color: white;
+  color: #EBEBEB;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .btn {
-  background: #7A2F00;
+  background: #EBEBEB;
   padding: 8px 16px;
   border-radius: 5px;
   font-weight: bold;

@@ -3,6 +3,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   margin-bottom: 20px;
+  background-size: cover !important;
+
 }
 .card-category {
   position: relative;
@@ -24,12 +26,11 @@
       transition-duration: 0.7s;
     }
     a {
-      color: $lavender;
+      color: #EBEBEB;
       text-decoration: none;
     }
 }
 .card-show {
-  background-color: $laci;
   display: flex;
   justify-content: space-between;
 }
@@ -42,5 +43,5 @@
   width: 60%;
 }
 .card-show {
-  color: $lavender;
+  color: $laci;
 }

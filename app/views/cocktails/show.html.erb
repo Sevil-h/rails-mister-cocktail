@@ -10,7 +10,9 @@
 <div class="container">
   <div class="card-show">
     <div class="info">
-      <div class="col-sm-12 col-md-6 p-2 m-3 text-center">
+      <div class="col-sm-12 col-md-6 p-2 m-3">
+      <h2 class="cocktail-img"><%= cl_image_tag @cocktail.photo.key, height: 250, width: 350, crop: :fill %></h2>
+
       <h3>Recipe</h3>
       <table>
         <tbody>

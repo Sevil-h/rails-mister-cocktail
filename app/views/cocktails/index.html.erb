@@ -18,12 +18,14 @@
 <div class="container">
   <div class="cards mt-3 mx-3">
     <% @cocktails.each do |cocktail| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
+      <% if cocktail.photo.key? %>
+        <% background_url = cl_image_path cocktail.photo.key, width: 400, height: 500, crop: :fill %>
+        <% else %>
+        <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
+        <% end %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= background_url %>')">
         <%= link_to cocktail.name, cocktail_path(cocktail) %>
       </div>
-      <%= link_to cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" } do %>
-        <i class="delete fa fa-trash destroy_dose"></i>
-        <% end %>
     <% end %>
   </div>
 </div>
