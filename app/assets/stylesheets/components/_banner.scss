@@ -1,33 +1,37 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
   text-align: center;
   width: 100vw;
   margin-bottom: 10px;
-  height: 20px;
+  height: 300px;
   background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://i.pinimg.com/564x/8a/30/24/8a30240bcafa4e9299edf3480cf055f7.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('http://5b0988e595225.cdn.sohucs.com/images/20171018/d643113361b440939bf786455aac7750.jpeg');
+  position: relative;
 }
 
-.banner h1 {
-  color: #EBEBEB;
-  font-family: 'Helvetica';
+.banner h2 {
+  color: #E1D1CB;
+  font-family: 'Libre Baskerville';
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   font-size: 50px;
   font-weight: bold;
-  text-align: center;
+  position: absolute;
+  top: 219px;
+  right: 154px;
 }
 
 .banner p {
+  font-family: 'Libre Baskerville';
   font-size: 20px;
-  color: #EBEBEB;
+  color: #E1D1CB;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .btn {
-  background: #EBEBEB;
+  color: #473144;
+  border: 2px solid #473144;
   padding: 8px 16px;
   border-radius: 5px;
   font-weight: bold;
@@ -38,4 +42,11 @@
     transition-duration: 0.7s;
     opacity: 1;
   }
+}
+.navbar{
+  position: relative;
+}
+.nav-link{
+  position: absolute;
+  z-index: 1;
 }

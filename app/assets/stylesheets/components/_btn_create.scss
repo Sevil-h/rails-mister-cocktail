@@ -1,0 +1,18 @@
+.btn-create{
+  font-size: 32px;
+  opacity: 0.8;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  a{
+    color: #E1D1CB;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      transition-duration: 0.7s;
+      opacity: 1;
+      color: #473144;
+      font-size: 44px;
+    }
+  }
+}

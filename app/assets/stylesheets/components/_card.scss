@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 230px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,14 +21,17 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    &:hover {
-      text-decoration: none;
-      opacity: 0.5;
-      transition-duration: 0.7s;
-    }
     a {
-      color: #EBEBEB;
+      font-family: 'Libre Baskerville';
+      color: #E1D1CB;
       text-decoration: none;
+      &:hover {
+      text-decoration: none;
+      transition-duration: 0.7s;
+      font-size: 32px;
+      color: #473144;
+      transition-duration: ease-in 0.7sn;
+    }
     }
 }
 .card-show {
